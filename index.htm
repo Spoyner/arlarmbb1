@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!-- 
+*****************************************************************************
+Title: Home Page for Poyner's Bicycle
+Use: This displays the home page this is being written to learn HTML5/CSS3 for IST336.
+Author: Scott Poyner
+School/Term: Southern Illinois University, Fall 2019
+Developed: Sept. 3, 2019
+Tested: Oct. 26, 2019; Passed on Firefox and Chrome browsers.
+******************************************************************************
+
+-->
+<html lang="en-US">
+<head> <!--Document starts here-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="This is a bicycle shop webpage.We sell, buy, fix, customize and rent bicycles">
+    <meta name="keywords" content= "poyner's,bicycle,fix,sell,customize,rent">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="Scott Poyner">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC&display=swap" rel="stylesheet"> 
+    <title>Poyner's Bicycles| Home Page</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+   <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" >
+    <!--SlickNav Plugin start-->
+      <link rel="stylesheet" href="slicknav.css"> 
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="jquery.slicknav.min.js"></script>
+      <script type="text/javascript">
+           $(document).ready(function(){$('#nav_menu').slicknav({prependTo:"#mobile_menu"});});</script>
+    <!--SlickNav Plugin stop-->
+        <!-- audio autoplay loop 1439KB-->
+</head> <!--Document end here-->
+    <body id="homebody">
+        <audio autoplay loop src="Bicycle.mp3"></audio>
+         <header>  <!--Business Header starts--> 
+         <h1>Poyner's Bicycles</h1>
+         <h2>We Pedal Our Gears for You!</h2>
+            <!-- Navigation menu-->
+       <nav id="mobile_menu"></nav>
+       <nav id="nav_menu">
+           <ul>
+               <li><a href="index.htm" class="current">Home</a></li>
+               <li><a href="rental.htm">Rental</a></li>
+               <li><a href="sales.htm">Sales</a></li>
+               <li><a href="services.htm">Services</a></li>
+               <li><a href="contact.htm" class="lastitem">Contact</a></li>
+           </ul>
+       </nav>
+    </header> <!--Business Header ends--> 
+   <main id="mainindex">
+       <!-- Welcome message for Poyner's Bicycle -->
+       <p class="first"> Welcome to the only place you'll need for bicycles, bicycle parts and accessories.
+       You break it we fix it. Need a new or used bicycle we got it or are you just wanting to add some bling we got that too.</p>
+       <p><q>So get on your bikes and ride!</q></p>
+       <!--New Image with caption-->
+       <figure class="container">
+           <p id="image1"></p>
+           <figcaption>Choose your type of bike</figcaption>
+       </figure>
+       <!-- Bicycle List -->
+       <p>We have these bicycle models in store:</p>
+       <ul>
+          <li>Huffy</li>
+          <li>Schwinn</li>
+          <li>Mongoose</li>
+          <li>BMX</li>
+          <li>Cannondale</li>
+       </ul>
+       <!-- Link to School -->
+       <p>Go to School <a href="https://siu.edu/">click here</a>.</p>
+       <!-- Address and Phone# of Store -->
+       <p>We are located at:<br>
+       1313 Mockingbird Lane<br>
+       Carbondale, IL<br>
+       Phone# 555-555-5555</p>
+   </main>
+  </body>
+</html>

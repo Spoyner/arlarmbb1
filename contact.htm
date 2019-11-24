@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Contact Page for Poyner's Bicycle
+Use: This displays the contact page this is being written to learn HTML5/CSS3 for IST336.
+Author: Scott Poyner
+School/Term: Southern Illinois University, Fall 2019
+Developed: Sept. 3, 2019
+Tested: Oct. 26, 2019; Passed on Firefox and Chrome browsers.
+******************************************************************************
+        -->
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is the bicycle contact page.">
+    <meta name="keywords" content= "poyner's,bicycle,contact">               
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="Scott Poyner">
+    <title>Poyner's Bicycles Contact Page</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+       <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" >
+    <!--SlickNav Plugin start-->
+      <link rel="stylesheet" href="slicknav.css"> 
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="jquery.slicknav.min.js"></script>
+      <script type="text/javascript">
+           $(document).ready(function(){
+               $('#nav_menu').slicknav({prependTo:"#mobile_menu"});});</script>
+    <!--SlickNav Plugin stop-->
+</head>
+<body id="conbody">
+<header>  <!--Contact info-->
+        <h1>Poyner's Bicycle Contact Page</h1>
+               <!-- Navigation menu-->
+         <nav id="mobile_menu"></nav>  
+         <nav id="nav_menu">
+           <ul>
+               <li><a href="index.htm"> Home</a></li>
+               <li><a href="rental.htm"> Rental</a></li>
+               <li><a href="sales.htm"> Sales</a></li>
+               <li><a href="services.htm"> Services</a></li>
+               <li><a href="contact.htm" class="lastitem">Contact</a></li>
+           </ul>
+       </nav>
+    </header> 
+<!--Contact Form Starts name, address, city, state, zip-->
+    <form action="response.htm" method="get" id="registration_form">
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" name="fullname" id="fullname" required minlength="15" maxlength="25"><br>
+        Address:
+        <input type="text" name="address" id="last_name" required minlength="15" maxlength="50"><br>
+        <label for="city">City:</label>
+        <input type="text" name="city" id="city" required minlength="4" maxlength="25"><br>
+        State:
+        <select id="state">
+            <optgroup label="State">
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KY">Kentucky</option>
+                <option value="MI">Michigan</option>
+                <option value="MO">Missouri</option>
+                <option value="MN">Minnesota</option>
+                <option value="OH">Ohio</option>
+                <option value="TN">Tennessee</option>
+                <option value="WI">Wisconsin</option>
+            </optgroup>
+        </select><br>
+        <label for="zip">Zip Code:</label>
+        <input type="text" name="zip" id="zip" required placeholder="5 or 9 digits" pattern="\d{5}(-\d{4})?$" title="Either 5 or 9 digits"><br>
+    <!--Phone type form-->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" required placeholder="999-999-9999" 
+               pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+               title="Must be like 999-999-9999"><br>
+    <!--E-mail type form-->
+        <label for="email">E-Mail:</label>
+        <input type="email" name="email" id="email" autofocus required minlength="10" maxlength="25"><br>
+    <!--Date type form-->
+        Date:&nbsp;&nbsp;
+        <input type="date" name="date_request" id="date"><br>
+    <!--Checkbox type form-->
+        Inquiry Type:<br>
+        <input type="checkbox" name="sales" value="sales">Sales<br>
+        <input type="checkbox" name="service" value="service">Service<br>
+        <input type="checkbox" name="rental" value="rental">Rental<br>
+    <!--Radio type form-->
+        Bicycle Type:<br>
+        <input type="radio" name="bike" value="Cannondale">Cannondale-Street<br>
+        <input type="radio" name="bike" value="Huffy">Huffy-Street<br>
+        <input type="radio" name="bike" value="Schwinn">Schwinn-Street<br>
+        <input type="radio" name="bike" value="Mongoose">Mongoose-Mountain<br>
+        <input type="radio" name="bike" value="BMX">BMX-Mountain<br>
+    <!--Password type form-->
+        <label for="password">Password:</label>
+         <input type="password" name="password" id="password" required placeholder="At least 6 letters or numbers" pattern="[a-zA-Z0-9]{6,}" title="Must be at least 6 alphanumeric characters"><br>
+        <label for="verify">Verify Password:</label>
+        <input type=password name="verify" id="verify" required><br>
+    <!--Message textarea form-->
+        Message:<br>
+        <textarea id="message" placeholder="Please leave your message here." minlength="10" maxlength="200">
+        </textarea>
+    </fieldset>   
+ <!--Buttons type form-->
+    <fieldset id="buttons">
+        <legend>Submit Your Request</legend>
+        <label>&nbsp;</label>
+        <input type="submit" id="submit" value="Submit">
+        <input type="reset" id="reset" value="Reset Fields"><br>
+        </fieldset>
+    </form>
+</body>
+</html>

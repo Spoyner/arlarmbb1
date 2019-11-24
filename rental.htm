@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- 
+*****************************************************************************
+Title: Rental Page for Poyner's Bicycle
+Use: This displays the rental page this is being written to learn HTML5/CSS3 for IST336.
+Author: Scott Poyner
+School/Term: Southern Illinois University, Fall 2019
+Developed: Sept. 3, 2019
+Tested: Oct. 26, 2019; Passed on Firefox and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+ <head> <!--Start of Rental Document-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is the bicycle rental page.">
+    <meta name="keywords" content= "poyner's,bicycle,rental">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Scott Poyner">
+    <title>Poyner's Bicycles | Rental Page</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+        <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" >
+    <!--SlickNav Plugin start-->
+      <link rel="stylesheet" href="slicknav.css"> 
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="jquery.slicknav.min.js"></script>
+      <script type="text/javascript">
+           $(document).ready(function(){
+               $('#nav_menu').slicknav({prependTo:"#mobile_menu"});});
+           </script>
+    <!--SlickNav Plugin stop-->
+ </head>
+ <body id="rentalbody">
+ <!--Two column page 2 for rentals-->
+    <header>
+        <h1>Poyner's Bicycle Rental Page</h1>
+               <!-- Navigation menu-->
+       <nav id="mobile_menu"></nav>
+       <nav id="nav_menu">
+           <ul>
+               <li><a href="index.htm"> Home</a></li>
+               <li><a href="rental.htm"> Rental</a></li>
+               <li><a href="sales.htm"> Sales</a></li>
+               <li><a href="services.htm"> Services</a></li>
+               <li><a href="contact.htm" class="lastitem">Contact</a></li>
+           </ul>
+       </nav>
+    </header>
+<!---Right Side-->
+        <main id="rentalmain">
+          <section id="rentalsec">
+              <h2>Street Bicycle</h2>
+                <h3>Huffy $15/day</h3>
+                  <ul id= "rrtside">
+                     <li>Youth Models</li>        
+                     <li>single-speed</li>
+                     <li>rear brakes only</li>
+                     <li>adjustable seat</li>
+                <li><h3>Schwinn $20/day</h3></li>  
+                    <li>10-speed</li>
+                    <li>women and men models</li>
+                    <li>water bottle holder</li>
+                    <li>front/rear braking</li>
+               </ul>
+          </section>
+<!--Left side-->
+        <aside>
+            <h2>Mountain Bicycle</h2>
+               <h3>Mongoose $20/day</h3>
+                  <ul id= "rltside">
+                     <li>Great traction</li>        
+                     <li>Fat Tires</li>
+                     <li>Simple to handle</li>
+                     <li>Reputable gearing system</li>        
+              <li><h3>BMX $15/day</h3></li>          
+                    <li>Strong Frame</li>
+                    <li>Single/Multi Gear</li>
+                    <li>water bottle holder</li>
+                    <li>rear braking only</li>
+                </ul>
+        </aside>
+     </main>   
+<!--Extras and Service Agrreement-->
+        <footer><h3>Extra if needed for $2 charge</h3></footer>
+    <ul>
+       <li>Helmet</li>
+       <li>Water Bottle</li>
+       <li>Training Wheels</li>
+    </ul>
+    <p>Rental agreement: You are expected to pay any damage and/or loss items occurred to said bicycle. There is a fifty dollar deposit returnable upon inspection. After agreement signed and money transaction completed you'll be able to choose your bicycle from the rental pool and have 24hrs to ride.</p>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Sales Page for Poyner's Bicycle
+Use: This displays the sales page this is being written to learn HTML5/CSS3 for IST336.
+Author: Scott Poyner
+School/Term: Southern Illinois University, Fall 2019
+Developed: Sept. 3, 2019
+Tested: Oct. 26, 2019; Passed on Firefox and Chrome browsers.
+******************************************************************************
+        -->
+<html lang="en-US">
+ <head> <!--Start of Sales Document-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is the bicycle sales page.">
+    <meta name="keywords" content= "poyner's,bicycle,sales">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="Scott Poyner">
+    <title>Poyner's Bicycles | Sales Page</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+        <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" >
+         <!--SlickNav Plugin start-->
+      <link rel="stylesheet" href="slicknav.css"> 
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="jquery.slicknav.min.js"></script>
+      <script type="text/javascript">
+           $(document).ready(function(){
+               $('#nav_menu').slicknav({prependTo:"#mobile_menu"});});</script>
+    <!--SlickNav Plugin stop-->
+ </head>
+<body id="salebody">
+     <header> <!--Sales page-->
+        <h1>Poyner's Bicycle Sales Page</h1>
+               <!-- Navigation menu-->
+         <nav id="mobile_menu"></nav>
+         <nav id="nav_menu">
+           <ul>
+               <li><a href="index.htm"> Home</a></li>
+               <li><a href="rental.htm"> Rental</a></li>
+               <li><a href="sales.htm"> Sales</a></li>
+               <li><a href="services.htm"> Services</a></li>
+               <li><a href="contact.htm" class="lastitem">Contact</a></li>
+           </ul>
+       </nav>
+    </header>
+<!--video-->
+    <video src="ShopMP4.mp4" controls autoplay></video>
+    <!--Put url in to reference bikes we have in shop-->
+    <p>Click on the bicycle models for you:</p>
+       <ul>
+          <li><a href="https://www.huffybikes.com/nighthawk-mens-mountain-bike-26-inch-56347">Huffy</a></li>
+          <li><a href=https://www.schwinnbikes.com/en/usa/bikes/cruiser/brookline-s8191wmds>Schwinn</a></li>
+          <li><a href=https://www.mongoose.com/collections/fat-bike/products/argus-26-sport-m20>Mongoose</a></li>
+          <li><a href=https://www.mongoose.com/collections/bmx/products/legion-l40-m20>BMX</a></li>
+          <li><a href=https://www.cannondale.com/en/USA/Bike/ProductDetail?Id=f7934ab4-8524-4025-97c9-56b2f2e8659f&parentid=undefined:>Cannondale</a></li>
+       </ul>
+</body>
+</html>
