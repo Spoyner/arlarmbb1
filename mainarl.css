@@ -7,10 +7,17 @@ body {
     line-height: 1.5;
     width: 100%;
     margin:10px auto;
-    max-width: 725px;                              /* maxium with of page */
-    padding: 10px 10px 10px ;            
+    max-width: 960px;                              /* maxium with of page */
+    padding: 50px 50px 50px ;            
 }
 
+h1 {animation: moveright 2s ease-in-out 1s 1 alternate;}
+@keyframes moveright {
+    from {margin-left: 20%;
+          color:blue;}
+    to   {margin-left: 50%;
+          color:red;}
+}
 h1, h2, h3, h4, h5, h6 {
     color: #222;
     text-align: center;
@@ -26,6 +33,7 @@ a {
   position: relative;
   width: 8.5517241%;
   height: 18px;
+    padding-right: 10px;
   }
 
 li {padding-left: 10px;
@@ -35,7 +43,7 @@ li {padding-left: 10px;
 figure {
     float:none;
     margin: 1.5em;
-}
+  }
 
 figcaption {
     display: block;
@@ -43,9 +51,9 @@ figcaption {
     padding: .25em;
     margin-bottom: 1em;
     border-bottom: 1px solid black;
-}
+    }
 
-.container {max-width: 960px;margin: 0} /***Image container***/
+.container {max-width: 246px;margin: 0} /***Image container***/
 
  #nav_menu ul li a{font-size: .875em;}
 /****Nav_menu CSS****/
@@ -66,22 +74,26 @@ figcaption {
 
 /***Image and Hover for home page***/
 #image1 {    max-width: 100%;
-    background-image: url("bicycle-161315_640.png");
+    background-image: url("armadillo2.jpg");
     background-size: contain;
     border: 10px solid rgba(0, 1, 250,1);
     border-radius: 4px;
-        width: 640px;
-        padding-top:51.5%;  
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding-top:51.5%; 
+   
 }
 
 #image1:hover {
-    background-image: url("bicycle-161524_640.png");
+    background-image: url("armadillo3.jpg");
 }
 
 /***Stop Home Page***/
 
-/****Rental Page CSS Starts****/
-#rentalbody, #respbody {
+/****CurrentStat Page CSS Starts****/
+#currentbody, #respbody {
     font-family: Arial, Helvetica, sans-serif;
      width: auto;
     font-size: 100%;
@@ -93,27 +105,17 @@ figcaption {
 
 header {width: 95.5%;  border-bottom: 2px solid black; }
 
-#rentalsec{
-    height: 350px; /**gives sidebar height for border**/
-    width: 48.2758621%;
-    float: left;
-    border-right: 4px solid black;
-}
 
-aside {
-    width: 48.2758621%;
-    float: right;
-}
 
 footer {clear: both;
         width: 100%;
 border-top: 2px solid black;
 }
-/****Rental Page CSS Stops****/
+/****CurrentStat Page CSS Stops****/
 
 
-/***Sales PAGE Starts***/
-#salebody {
+/***Video PAGE Starts***/
+#vidbody {
 background: #a5fa;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
@@ -124,13 +126,13 @@ background: #a5fa;
     padding: 10px 10px 10px ; 
 }
 
-video {
+iframe {
     position: relative;
     width: 100%;
     top: 0;
     height: auto;
 }
-/***Sales PAGE STOPS***/
+/***video PAGE STOPS***/
 
 /****Service Page & Tables Defined Starts****/
 #serbody {
@@ -294,8 +296,8 @@ textarea {
 }    
 /***Image define for Homepage***/
 #image1 {    
-    background-image: url("bicycle-161315_640.png");
-        width: 640px;
+    background-image: url("armadillo2.jpg");
+        width: 246px;
         padding-top:51.5%;
         border: 10px solid rgba(0, 1, 250,1);
     border-radius: 4px;
@@ -303,17 +305,17 @@ textarea {
 }
 
 #image1:hover {
-    background-image: url("bicycle-161524_640.png") 
+    background-image: url("armadillo3.jpg") 
 }
 /****Responsive for 959px STOPS****/
 
-/****Responsive for rental 767px START****/
+/****Responsive for CurrentStat 767px START****/
 @media only screen and (max-width:767px) {
     #nav_menu {display: none;}       /****hide the desktop menu ******/
     #mobile_menu {display: block;}
     /**** Image responsive on home page***/
 #image1 {    
-    background-image: url("bicycle-161315_640.png");
+    background-image: url("armadillo2.jpg");
         width: 100%;
         padding-top:58%;
         border: 10px solid rgba(0, 1, 250,1);
@@ -321,12 +323,12 @@ textarea {
 }
 
 #image1:hover {
-    background-image: url("bicycle-161524_640.png") 
+    background-image: url("armadillo3.jpg") 
 }
     
     /**************Body font responsive pages**********/
-    /***Rental and Response Page***/
-#rentalbody, #respbody {
+    /***Current and Response Page***/
+#currentbody, #respbody {
     font-family: Arial, Helvetica, sans-serif;
      width: auto;
     font-size:85%;
@@ -335,7 +337,7 @@ textarea {
     margin: 10px auto;
     border: 1px solid black;
 }
-    /**Sales Page**/
+    /**Video Page**/
     #salebody {
     background: #a5fa;
     font-size: 85%;
@@ -367,9 +369,20 @@ textarea {
 @media only screen and (max-width:479px) {
     #nav_menu {display: none;}       /****hide the desktop menu ******/
     #mobile_menu {display: block;}
+    #image1 {    
+    background-image: url("armadillo2.jpg");
+        width: 100%;
+        padding-top:58%;
+        border: 10px solid rgba(0, 1, 250,1);
+    border-radius: 4px;
+}
+
+#image1:hover {
+    background-image: url("armadillo3.jpg") 
+}
   /**************Body font responsive pages**********/ 
-    /**Rental and Response page**/
-    #rentalbody, #respbody {
+    /**CurrentStat and Response page**/
+    #currentbody, #respbody {
     font-family: Arial, Helvetica, sans-serif;
      width: auto;
     font-size:60%;
@@ -381,7 +394,7 @@ textarea {
     font-size: 65%;
     width: auto;
 }  
-        /**Sales Page**/
+        /**Video Page**/
     #salebody {
     background: #a5fa;
     font-size: 65%;

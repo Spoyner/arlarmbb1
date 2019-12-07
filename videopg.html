@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Video Highlight Page for AABaseball
+Use: This displays the highlight video/audio page this is being written to learn HTML5/CSS3 for IST336.
+Author: Scott Poyner
+School/Term: Southern Illinois University, Fall 2019
+Developed: Nov. 24, 2019
+Tested: Nov. 24, 2019; Passed on Firefox and Chrome browsers.
+******************************************************************************
+        -->
+<html lang="en-US">
+ <head> <!--Start of Sales Document-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is the Video page.">
+    <meta name="keywords" content= "video,highlights,audio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="Scott Poyner">
+    <title>Arlington Armadillos | Video Page</title>
+    <link rel="stylesheet" type="text/css" href="mainarl.css">
+        <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" >
+         <!--SlickNav Plugin start-->
+      <link rel="stylesheet" href="slicknav.css"> 
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="jquery.slicknav.min.js"></script>
+      <script type="text/javascript">
+           $(document).ready(function(){
+               $('#nav_menu').slicknav({prependTo:"#mobile_menu"});});</script>
+    <!--SlickNav Plugin stop-->
+ </head>
+<body id="vidbody">
+     <header> <!--Sales page-->
+        <h1>Arlington Armadillos Baseball</h1>
+          <!--New Image with caption-->
+       <figure class="container">
+           <p id="image1"></p>
+        <figcaption>PlayBall!</figcaption>
+       </figure>
+               <!-- Navigation menu-->
+         <nav id="mobile_menu"></nav>
+         <nav id="nav_menu">
+           <ul>
+               <li><a href="index.htm"> Home</a></li>
+               <li><a href="rental.htm"> CurrentStats</a></li>
+               <li><a href="sales.htm"> ArchiveStats</a></li>
+               <li><a href="services.htm"> VideoHighlights</a></li>
+               <li><a href="contact.htm" class="lastitem">Contact</a></li>
+           </ul>
+       </nav>
+    </header>
+<!--video-->
+    <h3>Who is Laughing now!!</h3>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/8Ket3BFas7E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <p>Bloopers video</p> 
+    
+    <h3>Soxs vs Cubs 9th Round Scorecard Even</h3>
+    <iframe width="640" height="360" src="https://www.youtube.com/embed/DYU60wK53Gw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p>Bench Clearing Brawl!!</p> 
+</body>
+</html>

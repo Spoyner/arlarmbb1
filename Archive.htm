@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- 
+*****************************************************************************
+Title: Archive Stat Page for Arlington Armadillos
+Use: This displays the rental page this is being written to learn HTML5/CSS3 for IST336.
+Author: Scott Poyner
+School/Term: Southern Illinois University, Fall 2019
+Developed: Sept. 3, 2019
+Tested: Oct. 26, 2019; Passed on Firefox and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+ <head> <!--Start of Archive Document-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="This is the bicycle rental page.">
+    <meta name="keywords" content= "Arlington,Armadillos,Batting,pitching,fielding">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Scott Poyner">
+    <title>Arlington Armadillos| Current Stats Page</title>
+    <link rel="stylesheet" type="text/css" href="mainarl.css">
+        <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" >
+    <!--SlickNav Plugin start-->
+      <link rel="stylesheet" href="slicknav.css"> 
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="jquery.slicknav.min.js"></script>
+      <script type="text/javascript">
+           $(document).ready(function(){
+               $('#nav_menu').slicknav({prependTo:"#mobile_menu"});});
+           </script>
+    <!--SlickNav Plugin stop-->
+ </head>
+ <body id="currentbody">
+ <!--Two column page 2 for rentals-->
+    <header>
+        <h1>Arlington Armadillos  Page</h1>
+        <!--New Image with caption-->
+       <center><figure class="container">
+           <p id="image1"></p>
+       <figcaption>We Dig Current Stats!</figcaption>
+       </figure></center>
+               <!-- Navigation menu-->
+       <nav id="mobile_menu"></nav>
+       <nav id="nav_menu">
+           <ul>
+               <li><a href="index.htm" class="current">Home</a></li>
+               <li><a href="current.htm">CurrentStats</a></li>
+               <li><a href="archive.htm">ArchiveStats</a></li>
+               <li><a href="videopg.html">VideoHighlights</a></li>
+               <li><a href="contact.htm" class="lastitem">Contact</a></li>
+           </ul>
+       </nav>
+    </header>
+<!---Stats-->
+        <main id="currentmain">
+          <h2>Archive Stat 1997-2018</h2>
+               <ul id= "rrtside">
+                      <li><a href="ArlArmBat19.htm">Batting Stats</a></li>        
+                     <li><a href="ArlArmPch19.htm">Pitching Stats</a></li>
+                     <li><a href="ArlArmFld19.htm">Fielding Stats</a></li>                   
+               </ul>
+        </main>   
+<!--Extras and Service Agrreement-->
+        <footer><h3>Career Stat</footer>
+    <a href="http://midleague.com/armadillos career batting.htm">Career Batting<br>     
+</a><a href="http://midleague.com/armadillos career pitching.htm">Career Pitching<br>     
+</a><a href="http://midleague.com/armadillos single season batting.htm">Single Season Batting<br>     
+</a><a href="http://midleague.com/armadillos single season pitching.htm">Single Season Pitching<br>     
+<br>     
+<br>     
+</a> 
+  </body>
+</html>
