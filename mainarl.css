@@ -39,8 +39,9 @@ a {
 li {padding-left: 10px;
 }
 
-/***Caption under home page Image***/
+/*****Image container***/
 .container {
+    max-width: 246px;margin: 0
     justify-content: center;
     text-align: center;
     margin-left: auto;
@@ -58,8 +59,6 @@ figcaption {
     border-bottom: 1px solid black;
     text-align: center;
     }
-
-.container {max-width: 246px;margin: 0} /***Image container***/
 
  #nav_menu ul li a{font-size: .875em;}
 /****Nav_menu CSS****/
